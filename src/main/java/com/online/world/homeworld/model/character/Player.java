@@ -6,6 +6,8 @@ import com.online.world.homeworld.model.stats.SecondaryStat;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.math.BigDecimal;
+
 @Entity
 @Table(name = "PLAYER_MODEL", schema = "HOME-WORLD")
 @Data
