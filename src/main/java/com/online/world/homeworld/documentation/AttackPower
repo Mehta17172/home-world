@@ -13,3 +13,14 @@ Class and Build Influence: Different character classes or builds might use stren
 Balancing: Game developers balance these attributes to ensure that characters with higher strength can deal significant damage, but other attributes (like agility, intelligence, or magic power) also have their roles in the game's ecosystem. This prevents any one attribute from becoming overly dominant.
 
 It's important to note that each MMORPG might have its own unique mechanics and balance decisions when it comes to attributes and attacking power. Always refer to the specific game's documentation or guides to understand how attributes like strength influence a character's attacking power in that particular game.
+
+
+Attack Power for Home-world:
+
+1. Melee class:
+    Attack Power = X * Strength + Y * agility;
+    X -> heavy armor factor
+    Y -> light armor factor
+
+2. Magic class:
+    Attack Power = ???
