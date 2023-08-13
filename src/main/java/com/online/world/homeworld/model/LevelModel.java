@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 import java.util.Objects;
 
 @Entity
-@Table(name = "LEVEL_MODEL", schema = "HOME_WORLD")
+@Table(name = "LEVEL_MODEL")
 @Getter
 @Setter
 @ToString

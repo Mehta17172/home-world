@@ -11,11 +11,8 @@ import org.hibernate.Hibernate;
 import java.util.Objects;
 
 @Entity
-@Table(name = "PLAYER_MODEL", schema = "HOME-WORLD")
-@Getter
-@Setter
-@ToString
-@RequiredArgsConstructor
+@Table(name = "PLAYER_MODEL")
+@Data
 public class PlayerModel {
 
     @Id

@@ -3,7 +3,6 @@ package com.online.world.homeworld.model.level;
 import jakarta.persistence.Embeddable;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
