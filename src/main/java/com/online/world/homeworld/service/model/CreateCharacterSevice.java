@@ -13,6 +13,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 @Service
@@ -32,6 +34,18 @@ public class CreateCharacterSevice {
         player.setPlayerLevel(generateRandomPlayerLevel());
         playerRepository.save(player);
         return player;
+    }
+
+    public List<PlayerModel> createNNumberRandomPlayers(int numberOfPlayers) {
+        List<PlayerModel> playerModels = new ArrayList<>();
+        int count = 0;
+        while(count != numberOfPlayers) {
+            count++;
+            PlayerModel player = createRandomPlayer();
+            playerModels.add(player);
+        }
+        playerRepository.saveAll(playerModels);
+        return playerModels;
     }
 
     private PlayerLevel generateRandomPlayerLevel() {

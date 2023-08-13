@@ -29,6 +29,11 @@ public class HomeWorldModelCreationController {
         return ResponseEntity.ok(createCharacterSevice.createRandomPlayer());
     }
 
+    @GetMapping("/player-creation/multiple")
+    public ResponseEntity<List<PlayerModel>> getNRandomPlayerStat(@RequestParam("numberOfPlayers") int numberOfPlayers) {
+        return ResponseEntity.ok(createCharacterSevice.createNNumberRandomPlayers(numberOfPlayers));
+    }
+
     @GetMapping("/level-mode-cration")
     public ResponseEntity<List<LevelModel>> createLevelModels(@RequestParam("levelCap") int levelCap) {
         return ResponseEntity.ok(levelModelService.creteLevelModel(levelCap));
