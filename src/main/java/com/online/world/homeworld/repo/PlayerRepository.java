@@ -1,7 +1,7 @@
 package com.online.world.homeworld.repo;
 
-import com.online.world.homeworld.model.character.Player;
-import org.springframework.data.repository.PagingAndSortingRepository;
+import com.online.world.homeworld.model.character.PlayerModel;
+import org.springframework.data.repository.CrudRepository;
 
-public interface PlayerRepository extends PagingAndSortingRepository<Player, String> {
+public interface PlayerRepository extends CrudRepository<PlayerModel, String> {
 }
